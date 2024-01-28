@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "907366765694",
+    "project_id": "abis-abis"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907366765694:android:61c221fa73831459",
+        "android_client_info": {
+          "package_name": "com.example.sennovations.newabis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907366765694-4tfc9kfo1aiea6h0h71gig0u34d1rupo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sennovations.newabis",
+            "certificate_hash": "f80c07e66f01620fed0ba1ccbdd2e8c4b7d67240"
+          }
+        },
+        {
+          "client_id": "907366765694-dbav5j6mirfoj8trgp7falsitlt1gnfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCq0dqRLyqEOu44sMAPCpTZGy7MTHKW7o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

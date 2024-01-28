@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#acaaaa">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="#002060"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abis1"
+            android:id="@+id/abisimg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/abisimg"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lock" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/abisimg"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="Create Your Account"
+                android:textAlignment="center"
+                android:textColor="#2311f1"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/abisimg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/email" />
+
+                </LinearLayout>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/img1"
+                android:layout_weight="1.6"
+                android:background="#ffffff"
+                android:hint="Email"
+                android:textColorHint="#bab7b7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/abisimg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/img1" />
+                </LinearLayout>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/img1"
+                android:layout_weight="1.6"
+                android:background="#ffffff"
+                android:hint="Full name"
+                android:textColorHint="#bab7b7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/img2" />
+
+                </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.6"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:theme="@style/MyTextInputLayout"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#666464">
+
+            <EditText
+                android:layout_marginBottom="5dp"
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/img1"
+                android:background="#ffffff"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="#bab7b7" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/abisimg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/repass" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.6"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:theme="@style/MyTextInputLayout"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#666464">
+            <EditText
+                android:layout_marginBottom="5dp"
+                android:id="@+id/repassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/img1"
+                android:background="#ffffff"
+                android:hint="Re-type password"
+                android:inputType="textPassword"
+                android:textColorHint="#bab7b7" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/abisimg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mobile" />
+                </LinearLayout>
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/img1"
+                android:layout_weight="1.6"
+                android:background="#ffffff"
+                android:hint="Mobile number"
+                android:inputType="phone"
+                android:textColorHint="#bab7b7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner2"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#cc0000"
+                android:text="Register"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/link_to_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:linksClickable="true"
+                android:textColor="#2311f1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    </ScrollView>

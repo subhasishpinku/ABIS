@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="#002060"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="THUMBRULE PORTFOLIO"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_weight="1"
+    android:background="@drawable/border"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Which age group you belong to ?"
+        android:textAlignment="center"
+        android:textColor="#002060"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/spinner_border"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/sp1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/newimage2" />
+
+    </RelativeLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which asset classes are you comfortable to invest ?"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17sp"
+            android:textColor="#002060"
+            android:textStyle="bold"
+            />
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spinner_border"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_height="10dp">
+            <Spinner
+                android:id="@+id/sp2"
+                android:layout_centerVertical="true"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/newimage2" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How much risk you are willing to take ?"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17sp"
+            android:textColor="#002060"
+            android:textStyle="bold"
+            />
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spinner_border"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_height="10dp">
+            <Spinner
+                android:id="@+id/sp3"
+                android:layout_centerVertical="true"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/newimage2" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/submitportfolio"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#cc0000"
+            android:text="SUBMIT"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

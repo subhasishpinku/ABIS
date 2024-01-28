@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="2"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:background="@drawable/border">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="Loan Amount"
+                    android:textAlignment="viewStart"
+                    android:textColor="#002060"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/info"/>
+
+                    </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:textAlignment="viewEnd"
+                    android:textColorHint="#bab7b7"
+                    android:inputType="number"
+                    android:hint="@string/hint"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:background="@drawable/border">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="130dp"
+                    android:textAlignment="viewStart"
+                    android:gravity="center"
+                    android:textColor="#002060"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Taxable Income" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/info"/>
+
+                    </LinearLayout>
+
+
+
+                <EditText
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:textAlignment="viewEnd"
+                    android:textColorHint="#bab7b7"
+                    android:inputType="number"
+                    android:hint="@string/hint"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:background="@drawable/border">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="130dp"
+                    android:textAlignment="viewStart"
+                    android:gravity="center"
+                    android:textColor="#002060"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Existing Investment" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/info"/>
+
+                    </LinearLayout>
+
+
+
+                <EditText
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:textAlignment="viewEnd"
+                    android:textColorHint="#bab7b7"
+                    android:inputType="number"
+                    android:hint="@string/hint"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="Loan Type"
+                    android:textAlignment="viewStart"
+                    android:textColor="#002060"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/spinner_border"
+                    android:layout_marginRight="2sp"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="horizontal"
+                    android:layout_height="30dp">
+
+                    <Spinner
+                        android:id="@+id/loantype"
+                        android:layout_centerVertical="true"
+                        android:spinnerMode="dropdown"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/newimage2" />
+                </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight=".1"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1.8"
+                    android:id="@+id/text5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Interest Rate"
+                    android:textColor="#002060"
+                    android:textAlignment="viewStart"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:id="@+id/seekbarvalue"
+                    android:layout_gravity="right|end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/emiseekBar"
+                    android:max="30"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:thumbOffset="0dp"
+                    android:progressDrawable="@drawable/progress_drawable"
+                    android:thumb="@drawable/apptheme_scrubber_control_selector_holo_light" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight=".1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp" />-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:id="@+id/text6"
+                    android:textAlignment="viewStart"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#002060"
+                    android:text="Tenure"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/spinner_border"
+                    android:layout_marginRight="2sp"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="horizontal"
+                    android:layout_height="25dp">
+                    <Spinner
+                        android:id="@+id/s_year"
+                        android:layout_centerVertical="true"
+                        android:spinnerMode="dropdown"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/newimage2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/spinner_border"
+                    android:layout_marginRight="2sp"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="horizontal"
+                    android:layout_height="25dp">
+                    <Spinner
+                        android:id="@+id/s_month"
+                        android:layout_centerVertical="true"
+                        android:spinnerMode="dropdown"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/newimage2" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/spinner_border"
+                    android:layout_marginRight="2sp"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="horizontal"
+                    android:layout_height="25dp">
+                    <Spinner
+                        android:id="@+id/s_day"
+                        android:layout_centerVertical="true"
+                        android:spinnerMode="dropdown"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/newimage2" />
+
+                </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight=".1"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="2"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/compute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner2"
+                android:text="Compute"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner2"
+                android:text="Reset"
+                android:id="@+id/login"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:background="#002060"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#ffffff"
+                    android:text="Monthly Emi" />
+
+
+
+                <EditText
+                    android:id="@+id/emi"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="0"
+                    android:editable="false"
+                    android:background="@drawable/border"
+                    android:textAlignment="center"
+                    android:textColorHint="#bab7b7" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text8"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#ffffff"
+                    android:text="Interest Amount" />
+
+
+
+                <EditText
+                    android:id="@+id/intamount"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="0"
+                    android:editable="false"
+                    android:background="@drawable/border"
+                    android:textAlignment="center"
+                    android:textColorHint="#bab7b7" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#ffffff"
+                    android:text="Tax On Interest" />
+
+
+
+                <EditText
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="0"
+                    android:editable="false"
+                    android:background="@drawable/border"
+                    android:textAlignment="center"
+                    android:textColorHint="#bab7b7" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#ffffff"
+                    android:text="Effective Annualized Return" />
+
+
+
+                <EditText
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="0 %"
+                    android:background="@drawable/border"
+                    android:textAlignment="center"
+                    android:textColorHint="#bab7b7" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

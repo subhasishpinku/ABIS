@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_cal"
+        android:icon="@drawable/cal2"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_thumb_port"
+        android:icon="@drawable/thump_portfolio"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_invest_profile"
+        android:icon="@drawable/money"
+        android:title="@string/title_notifications" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/user_profile"
+        android:title="@string/title_others"/>
+    <item
+        android:id="@+id/navigation_exit"
+        android:icon="@drawable/close"
+        android:title="@string/title_exit"/>
+
+</menu>

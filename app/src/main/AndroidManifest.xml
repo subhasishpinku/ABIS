@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sennovations.newabis" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <supports-screens>
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"
+    </supports-screens>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/APP_ID"/>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CalculatorActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".EMI"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FD_INTEREST"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RegistrationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RECURRING_FD_INTEREST"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Portfolio"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PiechartActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ForgotActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".OTP"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".InvestmentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Subscription"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

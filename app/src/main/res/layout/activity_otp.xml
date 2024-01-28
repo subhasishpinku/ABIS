@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bab7b7">
+
+    <LinearLayout
+    android:layout_marginTop="0dp"
+    android:layout_gravity="center"
+    android:id="@+id/ll1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:background="#002060"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="OTP Verification"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="25sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="150dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/number"
+            android:textStyle="bold"
+            android:textColor="#0b0b0b"
+            android:textAlignment="center"
+            android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/change"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textColor="#002060"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Moblie Number"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:id="@+id/resend"
+            android:textStyle="bold"
+            android:textColor="#002060"
+            android:textAlignment="center"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+
+<EditText
+    android:id="@+id/otp"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/round_corner"
+    android:layout_height="50dp"
+    android:textAlignment="center"
+    android:inputType="number"
+    android:hint="Please enter the verification code"
+
+    />
+
+<Button
+    android:background="@drawable/round_corner2"
+    android:textColor="#ffffff"
+    android:layout_marginTop="20dp"
+    android:id="@+id/submit"
+    android:layout_gravity="center"
+    android:layout_width="120dp"
+    android:layout_height="60dp"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:text="Submit"/>
+
+</LinearLayout>
+
+
+</LinearLayout>

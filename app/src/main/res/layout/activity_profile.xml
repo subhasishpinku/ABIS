@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#acaaaa">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#002060">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Personal Profile"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/proicon"/>
+            <TextView
+                android:id="@+id/textname"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#002060" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abisimg"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/ageicon"/>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.6"
+                    android:theme="@style/MyTextInputLayout"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    app:passwordToggleEnabled="false"
+                    app:passwordToggleTint="#666464"
+                    >
+
+                    <EditText
+                        android:id="@+id/age"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#ffffff"
+                        android:ems="12"
+                        android:inputType="number"
+                        android:hint="Age"
+                        android:imeOptions="actionNext"
+                        android:textColorHint="#bab7b7" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abisimg"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/dobicon"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:theme="@style/MyTextInputLayout"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        app:passwordToggleEnabled="false"
+                        app:passwordToggleTint="#666464"
+                        >
+
+                        <EditText
+                            android:id="@+id/dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#ffffff"
+                            android:ems="12"
+                            android:textColor="#0d0d0d"
+                            android:hint="D.O.B"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="#bab7b7" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginLeft="0dp"
+                        android:id="@+id/imageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/gendericon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1.6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:id="@+id/radioSex"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:layout_gravity="center"
+                            android:textColor="#002060"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            />
+                        <RadioButton
+                            android:id="@+id/female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:textColor="#002060"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abisimg"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/mobileicon"/>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.6"
+                    android:theme="@style/MyTextInputLayout"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    app:passwordToggleEnabled="false"
+                    app:passwordToggleTint="#666464"
+                    >
+
+                    <EditText
+                        android:id="@+id/mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#ffffff"
+                        android:ems="12"
+                        android:inputType="number"
+                        android:hint="Mobile"
+                        android:imeOptions="actionNext"
+                        android:textColorHint="#bab7b7" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abisimg"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/cityicon"/>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.6"
+                    android:theme="@style/MyTextInputLayout"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    app:passwordToggleEnabled="false"
+                    app:passwordToggleTint="#666464"
+                    >
+
+                    <EditText
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#ffffff"
+                        android:ems="12"
+                        android:hint="City"
+                        android:imeOptions="actionNext"
+                        android:textColorHint="#bab7b7" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abisimg"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/countryicon"/>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.6"
+                    android:theme="@style/MyTextInputLayout"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    app:passwordToggleEnabled="false"
+                    app:passwordToggleTint="#666464"
+                    >
+
+                    <EditText
+                        android:id="@+id/country"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#ffffff"
+                        android:ems="12"
+                        android:hint="Country"
+                        android:imeOptions="actionNext"
+                        android:textColorHint="#bab7b7" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abisimg"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/stateicon"/>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.6"
+                    android:theme="@style/MyTextInputLayout"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    app:passwordToggleEnabled="false"
+                    app:passwordToggleTint="#666464"
+                    >
+
+                    <EditText
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#ffffff"
+                        android:ems="12"
+                        android:hint="State"
+                        android:imeOptions="actionNext"
+                        android:textColorHint="#bab7b7" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abisimg"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/picicon"/>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.6"
+                    android:theme="@style/MyTextInputLayout"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    app:passwordToggleEnabled="false"
+                    app:passwordToggleTint="#666464"
+                    >
+
+                    <EditText
+                        android:id="@+id/pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#ffffff"
+                        android:ems="12"
+                        android:hint="Pincode"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:textColorHint="#bab7b7" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree to Terms and Condition"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/round_corner2"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/save"
+                android:background="#cc0000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Save &amp; Continue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#002060"
+                android:textSize="15sp"
+                android:text="Disclaimer : We are committed to respecting your privacy and protecting your personal information"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
